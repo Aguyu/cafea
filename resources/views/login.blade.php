@@ -23,10 +23,6 @@
                     <label for="password">Contraseña</label>
                     <input type="password" name="password" class="form-control" id="password" placeholder="Contraseña">
                   </div>
-                  <div class="mt-4">
-                  {!! NoCaptcha::renderJs() !!}
-                  {!! NoCaptcha::display() !!}
-                  </div>
                   <button type="submit" class="btn">Iniciar sesión</button>
                   @if($errors->any())
                   <ul>

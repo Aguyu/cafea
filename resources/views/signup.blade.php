@@ -43,10 +43,6 @@
                         <option value="Mujer">Mujer</option>
                     </select>
                  </div>
-                 <div class="mt-4">
-                  {!! NoCaptcha::renderJs() !!}
-                  {!! NoCaptcha::display() !!}
-                  </div>
                   <button type="submit" class="btn">Registrar</button>
 
                   @if($errors->any())
