@@ -19,7 +19,9 @@ use App\Http\Controllers\EmployeeController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+Route::get('/test', function(){
+    return view('login_test');
+});
 Route::get('/', function(){
     return view('index');
 })->name('index.home');

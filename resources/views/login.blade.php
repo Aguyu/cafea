@@ -7,8 +7,8 @@
 @endsection
 
 @section('main_content')
-
-    <div class="container-fluid background">
+<footer>
+<div class="container-fluid background">
         <p class="display-2 header">Restaurante de la abuelita</p>
         <div class="row">
             <div class="col-md-5 login-box col-sm-5">
@@ -23,6 +23,8 @@
                     <label for="password">Contraseña</label>
                     <input type="password" name="password" class="form-control" id="password" placeholder="Contraseña">
                   </div>
+                  {!! NoCaptcha::renderJs() !!}
+                  {!! NoCaptcha::display() !!}
                   <button type="submit" class="btn">Iniciar sesión</button>
                   @if($errors->any())
                   <ul>
@@ -43,3 +45,6 @@
     </div>
 
 @endsection
+
+</footer>
+    
