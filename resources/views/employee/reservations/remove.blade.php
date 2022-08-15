@@ -1,4 +1,4 @@
-@extends('admin.layouts.adminLayout')
+@extends('admin.layouts.adminlayout')
 
 @section('title', 'Usuario cancelar reservación')
 
@@ -28,7 +28,7 @@
                     <label for="exampleInputPassword2">Fecha</label>
                     <input type="number" class="form-control" id="exampleInputPassword2" placeholder="{{$reservation->date}}" name="capacity" value="{{$reservation->date}}" readonly>
                   </div>
-                  <button type="submit" class="btn">Eliminar reservación </button>
+                  <button type="submit" class="btn">Cancelar reservación </button>
                 </form>
                 @if($errors->any())
                 <ul>

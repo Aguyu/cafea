@@ -31,7 +31,7 @@
                               <td scope="row">{{$reservation->date}}</td>
                               <td scope="row">{{$reservation->time}}</td>
                               <td>
-                                      <a href="{{route('employee.cancelReservation', ['id' => $reservation->id])}}" type="button" class="btn btn-danger">Eliminar</a>
+                                      <a href="{{route('employee.cancelReservation', ['id' => $reservation->id])}}" type="button" class="btn btn-danger">Cancelar</a>
                               </td>
                             </tr>
                             @endforeach
