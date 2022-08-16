@@ -1,0 +1,1 @@
+<?php /**PATH C:\laragon\www\log_in\resources\views/admin/employees/new.blade.php ENDPATH**/ ?>
